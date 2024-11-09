@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="./js/svg-inject.js"></script>
+</head>
+<body>
+    <div class="page page-simple">
+        <header class="simpleHeader">
+            <div class="container">
+                <div class="simpleHeader__content">
+                    <a href="#" class="simpleHeader__logo">
+                        <img src="./img/logo.svg" onload="SVGInject(this)" class="simpleHeaderLogo__img" alt="">
+                    </a>
+                    <div class="cartBlock">
+                        <a href="#" class="cartBlock__link">
+                            <img src="./img/cart-icon.svg" onload="SVGInject(this)" class="cartBlock__icon" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="simpleMain">
+            <section class="loginPage">
+                <div class="container">
+                    <div class="login__wrap">
+                        <div class="loginPage__left">
+                            <div class="login__form">
+                                <div class="loginForm__header">
+                                    <h1 class="h1">LOGIN IN</h1>
+                                    <p class="loginForm__text">Join the partner e-shop with a password</p>
+                                </div>
+                                <div class="loginForm__content">
+                                    <form>
+                                        <div class="loginForm__wrap">
+                                            <div class="loginForm__row">
+                                                <input type="password" class="input" placeholder="Password">
+                                                <button type="button" class="loginForm__showBtn">Show</button>
+                                            </div>
+                                            <div class="loginForm__addBtns">
+                                                <label class="checkbox__container">Keep me logged in
+                                                    <input type="checkbox">
+                                                    <span class="checkbox__checkmark"></span>
+                                                </label>
+                                                <a href="#" class="loginForm__link">Forgot password?</a>
+                                            </div>
+                                            <div class="loginForm__btnWrap">
+                                                <button type="button" class="cartInfo__btn oginForm__btn">LOG IN</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="loginForm__textWrap">
+                                        <p class="loginForm__text">Don’t have an account? <a href="#" class="loginFormText__link">Register</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loginPage__right">
+                            <div class="registrationBlock">
+                                <div class="registrationBlock__header">
+                                    <h2 class="registrationBlock__title">Register for the partner e-shop  and you will get:</h2>
+                                </div>
+                                <div class="registrationBlock__points">
+                                    <div class="registrationBlock__point">
+                                        <div class="registrationBlock__iconWrap">
+                                            <img src="./img/done-icon.svg" onload="SVGInject(this)" class="registrationBlock__icon" alt="">
+                                        </div>
+                                        <p class="registrationBlock__text">I access the e-shop 24 hours a day, 7 days a week</p>
+                                    </div>
+                                    <div class="registrationBlock__point">
+                                        <div class="registrationBlock__iconWrap">
+                                            <img src="./img/done-icon.svg" onload="SVGInject(this)" class="registrationBlock__icon" alt="">
+                                        </div>
+                                        <p class="registrationBlock__text">Stock balances in real time for more than a million items</p>
+                                    </div>
+                                    <div class="registrationBlock__point">
+                                        <div class="registrationBlock__iconWrap">
+                                            <img src="./img/done-icon.svg" onload="SVGInject(this)" class="registrationBlock__icon" alt="">
+                                        </div>
+                                        <p class="registrationBlock__text">Receive your order the next working day at our office</p>
+                                    </div>
+                                    <div class="registrationBlock__point">
+                                        <div class="registrationBlock__iconWrap">
+                                            <img src="./img/done-icon.svg" onload="SVGInject(this)" class="registrationBlock__icon" alt="">
+                                        </div>
+                                        <p class="registrationBlock__text">Receive the order in Riga with our courier the next working day or elsewhere in Latvia with Venipak or Omniva within 3 working days</p>
+                                    </div>
+                                    <div class="registrationBlock__point">
+                                        <div class="registrationBlock__iconWrap">
+                                            <img src="./img/done-icon.svg" onload="SVGInject(this)" class="registrationBlock__icon" alt="">
+                                        </div>
+                                        <p class="registrationBlock__text">Place sample orders</p>
+                                    </div>
+                                    <div class="registrationBlock__point">
+                                        <div class="registrationBlock__iconWrap">
+                                            <img src="./img/done-icon.svg" onload="SVGInject(this)" class="registrationBlock__icon" alt="">
+                                        </div>
+                                        <p class="registrationBlock__text">Order status and history</p>
+                                    </div>
+                                </div>
+                                <div class="registrationBlock__btnWrap">
+                                    <a href="#" class="button registrationBlock__btn">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer footer-light">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__bottom">
+                        <div class="footerBottom__left">
+                            <p class="copyright__text">Copyright © 2011-2024 DINOSS</p>
+                        </div>
+                        <div class="footerBottom__right">
+                            <div class="footerBottom__menu">
+                                <a href="#" class="footerBottomMenu__link">Privacy Policy</a>
+                                <a href="#" class="footerBottomMenu__link">Terms of use</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/js.js"></script>
+</body>
+</html>

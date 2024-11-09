@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jquery.custom-select.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="./js/svg-inject.js"></script>
+    <script src="./js/jquery.custom-select.min.js"></script>
+</head>
+<body>
+    <div class="page page-simple">
+        <header class="simpleHeader">
+            <div class="container">
+                <div class="simpleHeader__content">
+                    <a href="#" class="simpleHeader__logo">
+                        <img src="./img/logo.svg" onload="SVGInject(this)" class="simpleHeaderLogo__img" alt="">
+                    </a>
+                    <div class="cartBlock">
+                        <a href="#" class="cartBlock__link">
+                            <img src="./img/cart-icon.svg" onload="SVGInject(this)" class="cartBlock__icon" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="simpleMain">
+            <section class="registrationPage">
+                <div class="container">
+                    <div class="registration">
+                        <div class="registration__header">
+                            <h1 class="h1">Partner registration</h1>
+                        </div>
+                        <form>
+                            <div class="registration__content">
+                                <div class="registration__col">
+                                    <div class="registrationCol__header">
+                                        <h3 class="registrationCol__title">Company data</h3>
+                                    </div>
+                                    <div class="registrationCol__content">
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Company Name">
+                                            </div>
+                                        </div>
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Registration number">
+                                            </div>
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="VAT number">
+                                            </div>
+                                        </div>
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Legal address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration__col">
+                                    <div class="registrationCol__header">
+                                        <h3 class="registrationCol__title">Contact details</h3>
+                                    </div>
+                                    <div class="registrationCol__content">
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="First name">
+                                            </div>
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Phone">
+                                            </div>
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration__col">
+                                    <div class="registrationCol__header">
+                                        <h3 class="registrationCol__title">Information about the company</h3>
+                                    </div>
+                                    <div class="registrationCol__content">
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <select class="select">
+                                                    <option value="">Select an option</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Planned average turnover per month €">
+                                            </div>
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="The industry in which the company works">
+                                            </div>
+                                        </div>
+                                        <div class="registrationCol__row">
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Facebook page">
+                                            </div>
+                                            <div class="registrationCol__elem">
+                                                <input type="text" class="input" placeholder="Website address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text__wrap mt-50">
+                                <p class="text text-small">Dinoss is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:</p>
+                                <p class="text text-small">I agree to receive other communications from Dinoss.</p>
+                                <p class="text text-small">You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our Privacy Policy.</p>
+                                <p class="text text-small">By clicking submit below, you consent to allow Dinoss to store and process the personal information submitted above to provide you the content requested.</p>
+                            </div>
+                            <div class="registration__btnWrap">
+                                <button type="button" class="cartInfo__btn registration__btn">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer footer-light">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__bottom">
+                        <div class="footerBottom__left">
+                            <p class="copyright__text">Copyright © 2011-2024 DINOSS</p>
+                        </div>
+                        <div class="footerBottom__right">
+                            <div class="footerBottom__menu">
+                                <a href="#" class="footerBottomMenu__link">Privacy Policy</a>
+                                <a href="#" class="footerBottomMenu__link">Terms of use</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(function() {
+            $('.select').customSelect();
+        })
+    </script>
+    <script src="./js/js.js"></script>
+</body>
+</html>

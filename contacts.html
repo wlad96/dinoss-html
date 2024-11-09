@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/css.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/svg-inject.js"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="headerTop__content">
+                        <div class="headerTop__left">
+                            <div class="headerTop__textWrap">
+                                <p class="headerTop__text">Clothes for your BRAND, with or without printing. <a href="#" class="headerTop__link">Details</a></p>
+                            </div>
+                        </div>
+                        <div class="headerTop__right">
+                            <div class="headerTop__menu headerTop__menu-sub">
+                                <div class="headerTopMenu__current">
+                                    <div class="headerTopMenuCurrent__wrap">
+                                        <span class="headerTopMenu__current-text">About</span>
+                                    </div>
+                                    <img src="./img/arrow-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                </div>
+                                <div class="headerTopMenu__content">
+                                    <div class="headerTopMenu__block">
+                                        <div class="headerTopMenuBlock__titleWrap">
+                                            <h5 class="headerTopMenuBlock__title">For Clients</h5>
+                                        </div>
+                                        <div class="headerTopMenuBlock__links">
+                                            <a href="#" class="headerTopMenuBlock__link">Online catalog</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Returns</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Shipping & Delivery</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Privacy Policy</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Terms of use</a>
+                                        </div>
+                                    </div>
+                                    <div class="headerTopMenu__block">
+                                        <div class="headerTopMenuBlock__titleWrap">
+                                            <h5 class="headerTopMenuBlock__title">Company</h5>
+                                        </div>
+                                        <div class="headerTopMenuBlock__links">
+                                            <a href="#" class="headerTopMenuBlock__link">About us</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Contacts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headerTop__menu">
+                                <a href="#" class="headerTopMenu__current">
+                                    <div class="headerTopMenuCurrent__wrap">
+                                        <img src="./img/partners-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                        <span class="headerTopMenu__current-text">For Partners</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="headerTop__menu headerTop__menu-sub">
+                                <a href="#" class="headerTopMenu__current">
+                                    <div class="headerTopMenuCurrent__wrap">
+                                        <img src="./img/language-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                        <span class="headerTopMenu__current-text">Eng</span>
+                                    </div>
+                                    <img src="./img/arrow-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                </a>
+                                <div class="language__sub">
+                                    <a href="#" class="languageSub__link">
+                                        <img src="./img/lv.svg" onload="SVGInject(this)" class="languageSubLink__icon" alt="">
+                                        <span class="languageSubLink__text">Latvian</span>
+                                    </a>
+                                    <a href="#" class="languageSub__link">
+                                        <img src="./img/en.svg" onload="SVGInject(this)" class="languageSubLink__icon" alt="">
+                                        <span class="languageSubLink__text">English</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__main">
+                <div class="container">
+                    <div class="headerMain__wrap">
+                        <div class="logo">
+                            <a href="#" class="logo__link">
+                                <img src="./img/logo.svg" onload="SVGInject(this)" class="logo__img" alt="">
+                            </a>
+                        </div>
+                        <nav class="nav">
+                            <div class="nav__linkWrap nav__linkWrap-sub">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Women</span>
+                                    
+                                </a>
+                                <div class="nav__sub">
+                                    <div class="container">
+                                        <div class="navSub__wrap">
+                                            <div class="navSub__menu">
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">T-shirts</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Long Sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Short Sleeves</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Polo shirts</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Long Sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Short Sleeves</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">shirts</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">3/4 sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Long Sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Short Sleeves</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Hoodies</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">With hood</a>
+                                                            <a href="#" class="navSubMenu__link">With zipper</a>
+                                                            <a href="#" class="navSubMenu__link">Without a hood</a>
+                                                            <a href="#" class="navSubMenu__link">Without zipper</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Sweaters</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Jackets</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Eco friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Outdoor jackets</a>
+                                                            <a href="#" class="navSubMenu__link">Softshell</a>
+                                                            <a href="#" class="navSubMenu__link">Windbreakers</a>
+                                                            <a href="#" class="navSubMenu__link">Winter</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Fleece</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Fleece</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Bodywarmers</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Bodywarmers</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Shorts</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Pants</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Sportswear</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Bags</a>
+                                                            <a href="#" class="navSubMenu__link">Eco friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Pants</a>
+                                                            <a href="#" class="navSubMenu__link">Shorts</a>
+                                                            <a href="#" class="navSubMenu__link">Socks</a>
+                                                            <a href="#" class="navSubMenu__link">T-shirts</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title navSubMenu__title-red">Outlet</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navSub__imgWrap">
+                                                <img src="./img/submenu-img.jpg" class="navSub__img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Men</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Kids</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Accessories</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Workwear</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">New Models</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="helpful__block">
+                            <div class="search__wrap">
+                                <form>
+                                    <input type="text" class="search__input" placeholder="Search">
+                                    <button class="search__btn">
+                                        <img src="./img/search-icon.svg" onload="SVGInject(this)" class="searchBtn__icon" alt="">
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="cartBlock">
+                                <a href="#" class="cartBlock__link">
+                                    <img src="./img/cart-icon.svg" onload="SVGInject(this)" class="cartBlock__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="mainSection">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <div class="breadcrumbs__content">
+                            <div class="breadcrumb">
+                                <a href="#" class="breadcrumb__link">
+                                    Home
+                                </a>
+                            </div>
+                            <img src="./img/arrow-right.svg" onload="SVGInject(this)" class="breadcrumb__arrow" alt="">
+                            <div class="breadcrumb">
+                                <span class="breadcrumb__current">Contacts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content">
+                        <div class="contactPage">
+                            <div class="contacts">
+                                <div class="contacts__left">
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.910831290533!2d24.148752277431438!3d56.950328973550995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eece3bacfacc1d%3A0x9ab2407ca6ab2d29!2sVagonu%20iela%2023%2C%20Latgales%20priek%C5%A1pils%C4%93ta%2C%20R%C4%ABga%2C%20LV-1009!5e0!3m2!1sen!2slv!4v1729529053813!5m2!1sen!2slv&hl=en" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="contacts__right">
+                                    <div class="contactsBlock">
+                                        <div class="contactsBlock__header">
+                                            <h1 class="h1">Contacts</h1>
+                                        </div>
+                                        <div class="contactsBlock__content">
+                                            <div class="contactsBlock__elem">
+                                                <h5 class="contactsBlock__title">Office</h5>
+                                                <p class="contactsBlock__text">
+                                                    T: 26343234 <br/>
+                                                    T: 67818214 <br/>
+                                                    info@dinoss.lv 
+                                                </p>
+                                            </div>
+                                            <div class="contactsBlock__elem">
+                                                <h5 class="contactsBlock__title">Dinoss SIA</h5>
+                                                <p class="contactsBlock__text">
+                                                    Vagonu iela 23, Rīga, Latvija, LV-1009 <br/>
+                                                    LV40003269322 <br/>
+                                                    LV03HABA0001408038590
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__form">
+                                        <div class="contactsForm__header">
+                                            <h2 class="h1">Have something to say?</h2>
+                                            <p class="contactsForm__text">Feel free to fill out the contact form below!</p>
+                                        </div>
+                                        <form>
+                                            <div class="contactsForm__content">
+                                                <div class="contactsForm__row">
+                                                    <div class="contactsForm__elem">
+                                                        <input type="text" class="input" placeholder="Full name">
+                                                    </div>
+                                                </div>
+                                                <div class="contactsForm__row">
+                                                    <div class="contactsForm__elem">
+                                                        <input type="text" class="input" placeholder="Phone">
+                                                    </div>
+                                                    <div class="contactsForm__elem">
+                                                        <input type="text" class="input" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="contactsForm__row">
+                                                    <div class="contactsForm__elem">
+                                                        <textarea name="" id="" cols="30" rows="4" class="textarea" placeholder="Comments (optional)"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="contactsForm__btnWrap">
+                                                    <button type="button" class="cartInfo__btn contactsForm__btn">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="staff__header">
+                                    <h2 class="h1">Project managers</h2>
+                                </div>
+                                <div class="staff__content">
+                                    <div class="staff__elem">
+                                        <div class="staff__imgWrap">
+                                            <img src="./img/staff.png" class="staff__img" alt="">
+                                        </div>
+                                        <div class="staff__info">
+                                            <h5 class="staff__title">Jānis Rava</h5>
+                                            <p class="staff__text">
+                                                T: 26383837 <br/>
+                                                janis@dinoss.lv
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="staff__elem">
+                                        <div class="staff__imgWrap">
+                                            <img src="./img/staff.png" class="staff__img" alt="">
+                                        </div>
+                                        <div class="staff__info">
+                                            <h5 class="staff__title">Jānis Rava</h5>
+                                            <p class="staff__text">
+                                                T: 26383837 <br/>
+                                                janis@dinoss.lv
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="staff__elem">
+                                        <div class="staff__imgWrap">
+                                            <img src="./img/staff.png" class="staff__img" alt="">
+                                        </div>
+                                        <div class="staff__info">
+                                            <h5 class="staff__title">Jānis Rava</h5>
+                                            <p class="staff__text">
+                                                T: 26383837 <br/>
+                                                janis@dinoss.lv
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="staff__elem">
+                                        <div class="staff__imgWrap">
+                                            <img src="./img/staff.png" class="staff__img" alt="">
+                                        </div>
+                                        <div class="staff__info">
+                                            <h5 class="staff__title">Jānis Rava</h5>
+                                            <p class="staff__text">
+                                                T: 26383837 <br/>
+                                                janis@dinoss.lv
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="staff__elem">
+                                        <div class="staff__imgWrap">
+                                            <img src="./img/staff.png" class="staff__img" alt="">
+                                        </div>
+                                        <div class="staff__info">
+                                            <h5 class="staff__title">Jānis Rava</h5>
+                                            <p class="staff__text">
+                                                T: 26383837 <br/>
+                                                janis@dinoss.lv
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribeSection">
+                <div class="container">
+                    <div class="subscribe">
+                        <div class="subscribe__left">
+                            <div class="subscribe__titleWrap">
+                                <h2 class="h1">Subscribe for discounts adn sales!</h2>
+                            </div>
+                            <div class="subscribe__textWrap">
+                                <p class="text">Stay up to date with all the news and be one of the first to receive new
+                                    offers and promotions</p>
+                            </div>
+                        </div>
+                        <div class="subscribe__right">
+                            <form>
+                                <div class="subscribe__form">
+                                    <input type="text" class="subscribeForm__input" placeholder="Your email">
+                                    <button type="button" class="subscribeForm__btn">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__top">
+                        <div class="footer__contacts">
+                            <div class="footerContacts__header">
+                                <h5 class="footer__title">Contacts</h5>
+                            </div>
+                            <div class="footerContacts__content">
+                                <p class="footerContacts__text"><span>Dinoss SIA</span></p>
+                                <p class="footerContacts__text">T: 26343234</p>
+                                <p class="footerContacts__text">T: 67818214</p>
+                                <p class="footerContacts__text">info@dinoss.lv</p>
+                                <p class="footerContacts__text">Vagonu iela 23, Rīga, Latvija, LV-1009</p>
+                                <p class="footerContacts__text">LV40003269322</p>
+                                <p class="footerContacts__text">LV03HABA0001408038590</p>
+                            </div>
+                        </div>
+                        <div class="footer__managers">
+                            <div class="footerContacts__header">
+                                <h5 class="footer__title">Project managers</h5>
+                            </div>
+                            <div class="footerManagers__content">
+                                <div class="footerManagers__col">
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Jānis Rava</span></p>
+                                        <p class="footerContacts__text">T: 26383837</p>
+                                        <p class="footerContacts__text">janis@dinoss.lv</p>
+                                    </div>
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Rūdolfs Rava</span></p>
+                                        <p class="footerContacts__text">T: 29499045</p>
+                                        <p class="footerContacts__text">rudolfs@dinoss.lv</p>
+                                    </div>
+                                </div>
+                                <div class="footerManagers__col">
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Laura Sticenko</span></p>
+                                        <p class="footerContacts__text">T: 20362313</p>
+                                        <p class="footerContacts__text">laura@dinoss.lv</p>
+                                    </div>
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Mārcis Minders</span></p>
+                                        <p class="footerContacts__text">T: 29324659</p>
+                                        <p class="footerContacts__text">m.minders@dinoss.lv</p>
+                                    </div>
+                                </div>
+                                <div class="footerManagers__col">
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Jānis Karlsons</span></p>
+                                        <p class="footerContacts__text">T: 29375666</p>
+                                        <p class="footerContacts__text">janis.karlsons@dinoss.lv</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__socials">
+                            <div class="footerSocials__titleWrap">
+                                <h5 class="footerSocials__title">Follow us</h5>
+                            </div>
+                            <div class="footerSocials__content">
+                                <a href="#" class="footerSocials__link">
+                                    <img src="./img/fb-icon.svg" onload="SVGInject(this)" class="footerSocials__link-img" alt="">
+                                </a>
+                                <a href="#" class="footerSocials__link">
+                                    <img src="./img/instagram-icon.svg" onload="SVGInject(this)" class="footerSocials__link-img" alt="">
+                                </a>
+                                <a href="#" class="footerSocials__link">
+                                    <img src="./img/youtube-icon.svg" onload="SVGInject(this)" class="footerSocials__link-img" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footerBottom__left">
+                            <p class="copyright__text">Copyright © 2011-2024 DINOSS</p>
+                        </div>
+                        <div class="footerBottom__right">
+                            <div class="footerBottom__menu">
+                                <a href="#" class="footerBottomMenu__link">Privacy Policy</a>
+                                <a href="#" class="footerBottomMenu__link">Terms of use</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/js.js"></script>
+</body>
+</html>

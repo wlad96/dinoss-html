@@ -1,0 +1,43 @@
+<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flag">
+<mask id="mask0_33_34849" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="12">
+<rect id="mask" width="18" height="12" fill="white"/>
+</mask>
+<g mask="url(#mask0_33_34849)">
+<g id="contents">
+<path id="background" fill-rule="evenodd" clip-rule="evenodd" d="M0 0V12H18V0H0Z" fill="#2E42A5"/>
+<mask id="mask1_33_34849" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="12">
+<path id="background_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 0V12H18V0H0Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_33_34849)">
+<g id="mark 1">
+<mask id="mask2_33_34849" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="12">
+<rect id="mask_2" width="18" height="12" fill="white"/>
+</mask>
+<g mask="url(#mask2_33_34849)">
+<g id="contents_2">
+<g id="stripe">
+<path id="white" d="M-2.00427 11.1427L1.95668 12.6317L18.0899 1.6189L20.1792 -0.593837L15.9435 -1.09151L9.36317 3.65422L4.06667 6.85174L-2.00427 11.1427Z" fill="#F0F0F0"/>
+<path id="red" d="M-1.46204 12.1859L0.555885 13.05L19.4289 -0.799421H16.5955L-1.46204 12.1859Z" fill="#D80027"/>
+</g>
+<g id="stripe_2">
+<path id="white_2" d="M20.0043 11.1427L16.0433 12.6317L-0.0898743 1.6189L-2.17918 -0.593837L2.05648 -1.09151L8.63683 3.65422L13.9333 6.85174L20.0043 11.1427Z" fill="#F0F0F0"/>
+<path id="red_2" d="M19.8691 11.8914L17.8512 12.7555L9.81489 6.82582L7.43229 6.16331L-2.3802 -0.586292H0.453194L10.2602 6.0031L12.8651 6.79752L19.8691 11.8914Z" fill="#D80027"/>
+</g>
+<g id="cross">
+<g id="red_3">
+<mask id="path-9-inside-1_33_34849" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.125 -1H6.87503V4H-1.1095V8H6.87503V13H11.125V8H19.1405V4H11.125V-1Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.125 -1H6.87503V4H-1.1095V8H6.87503V13H11.125V8H19.1405V4H11.125V-1Z" fill="#D80027"/>
+<path d="M6.87503 -1V-2H5.87503V-1H6.87503ZM11.125 -1H12.125V-2H11.125V-1ZM6.87503 4V5H7.87503V4H6.87503ZM-1.1095 4V3H-2.1095V4H-1.1095ZM-1.1095 8H-2.1095V9H-1.1095V8ZM6.87503 8H7.87503V7H6.87503V8ZM6.87503 13H5.87503V14H6.87503V13ZM11.125 13V14H12.125V13H11.125ZM11.125 8V7H10.125V8H11.125ZM19.1405 8V9H20.1405V8H19.1405ZM19.1405 4H20.1405V3H19.1405V4ZM11.125 4H10.125V5H11.125V4ZM6.87503 0H11.125V-2H6.87503V0ZM7.87503 4V-1H5.87503V4H7.87503ZM-1.1095 5H6.87503V3H-1.1095V5ZM-0.109497 8V4H-2.1095V8H-0.109497ZM6.87503 7H-1.1095V9H6.87503V7ZM7.87503 13V8H5.87503V13H7.87503ZM11.125 12H6.87503V14H11.125V12ZM10.125 8V13H12.125V8H10.125ZM19.1405 7H11.125V9H19.1405V7ZM18.1405 4V8H20.1405V4H18.1405ZM11.125 5H19.1405V3H11.125V5ZM10.125 -1V4H12.125V-1H10.125Z" fill="#F0F0F0" mask="url(#path-9-inside-1_33_34849)"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

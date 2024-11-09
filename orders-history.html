@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders history page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/datepicker.material.css">
+    <link rel="stylesheet" href="./css/jquery.custom-select.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/svg-inject.js"></script>
+    <script src="./js/datepicker.js"></script>
+    <script src="./js/jquery.custom-select.min.js"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="headerTop__content">
+                        <div class="headerTop__left">
+                            <div class="headerTop__textWrap">
+                                <p class="headerTop__text">Clothes for your BRAND, with or without printing. <a href="#" class="headerTop__link">Details</a></p>
+                            </div>
+                        </div>
+                        <div class="headerTop__right">
+                            <div class="headerTop__menu headerTop__menu-sub">
+                                <div class="headerTopMenu__current">
+                                    <div class="headerTopMenuCurrent__wrap">
+                                        <span class="headerTopMenu__current-text">About</span>
+                                    </div>
+                                    <img src="./img/arrow-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                </div>
+                                <div class="headerTopMenu__content">
+                                    <div class="headerTopMenu__block">
+                                        <div class="headerTopMenuBlock__titleWrap">
+                                            <h5 class="headerTopMenuBlock__title">For Clients</h5>
+                                        </div>
+                                        <div class="headerTopMenuBlock__links">
+                                            <a href="#" class="headerTopMenuBlock__link">Online catalog</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Returns</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Shipping & Delivery</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Privacy Policy</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Terms of use</a>
+                                        </div>
+                                    </div>
+                                    <div class="headerTopMenu__block">
+                                        <div class="headerTopMenuBlock__titleWrap">
+                                            <h5 class="headerTopMenuBlock__title">Company</h5>
+                                        </div>
+                                        <div class="headerTopMenuBlock__links">
+                                            <a href="#" class="headerTopMenuBlock__link">About us</a>
+                                            <a href="#" class="headerTopMenuBlock__link">Contacts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headerTop__menu">
+                                <a href="#" class="headerTopMenu__current">
+                                    <div class="headerTopMenuCurrent__wrap">
+                                        <img src="./img/partners-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                        <span class="headerTopMenu__current-text">John White</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="headerTop__menu headerTop__menu-sub">
+                                <a href="#" class="headerTopMenu__current">
+                                    <div class="headerTopMenuCurrent__wrap">
+                                        <img src="./img/language-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                        <span class="headerTopMenu__current-text">Eng</span>
+                                    </div>
+                                    <img src="./img/arrow-icon.svg" onload="SVGInject(this)" class="headerTopMenu__icon" alt="">
+                                </a>
+                                <div class="language__sub">
+                                    <a href="#" class="languageSub__link">
+                                        <img src="./img/lv.svg" onload="SVGInject(this)" class="languageSubLink__icon" alt="">
+                                        <span class="languageSubLink__text">Latvian</span>
+                                    </a>
+                                    <a href="#" class="languageSub__link">
+                                        <img src="./img/en.svg" onload="SVGInject(this)" class="languageSubLink__icon" alt="">
+                                        <span class="languageSubLink__text">English</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__main">
+                <div class="container">
+                    <div class="headerMain__wrap">
+                        <div class="logo">
+                            <a href="#" class="logo__link">
+                                <img src="./img/logo.svg" onload="SVGInject(this)" class="logo__img" alt="">
+                            </a>
+                        </div>
+                        <nav class="nav">
+                            <div class="nav__linkWrap nav__linkWrap-sub">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Women</span>
+                                    
+                                </a>
+                                <div class="nav__sub">
+                                    <div class="container">
+                                        <div class="navSub__wrap">
+                                            <div class="navSub__menu">
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">T-shirts</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Long Sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Short Sleeves</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Polo shirts</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Long Sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Short Sleeves</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">shirts</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">3/4 sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Long Sleeves</a>
+                                                            <a href="#" class="navSubMenu__link">Short Sleeves</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Hoodies</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">With hood</a>
+                                                            <a href="#" class="navSubMenu__link">With zipper</a>
+                                                            <a href="#" class="navSubMenu__link">Without a hood</a>
+                                                            <a href="#" class="navSubMenu__link">Without zipper</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Sweaters</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Jackets</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Eco friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Outdoor jackets</a>
+                                                            <a href="#" class="navSubMenu__link">Softshell</a>
+                                                            <a href="#" class="navSubMenu__link">Windbreakers</a>
+                                                            <a href="#" class="navSubMenu__link">Winter</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Fleece</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Fleece</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Bodywarmers</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Bodywarmers</a>
+                                                            <a href="#" class="navSubMenu__link">Eco Friendly</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Shorts</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Pants</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navSubMenu__col">
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title">Sportswear</h5>
+                                                        </div>
+                                                        <div class="navSubMenu__links">
+                                                            <a href="#" class="navSubMenu__link">See All</a>
+                                                            <a href="#" class="navSubMenu__link">Bags</a>
+                                                            <a href="#" class="navSubMenu__link">Eco friendly</a>
+                                                            <a href="#" class="navSubMenu__link">Pants</a>
+                                                            <a href="#" class="navSubMenu__link">Shorts</a>
+                                                            <a href="#" class="navSubMenu__link">Socks</a>
+                                                            <a href="#" class="navSubMenu__link">T-shirts</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="navSubMenu__block">
+                                                        <div class="navSubMenu__titleWrap">
+                                                            <h5 class="navSubMenu__title navSubMenu__title-red">Outlet</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navSub__imgWrap">
+                                                <img src="./img/submenu-img.jpg" class="navSub__img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Men</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Kids</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Accessories</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">Workwear</span>
+                                </a>
+                            </div>
+                            <div class="nav__linkWrap">
+                                <a href="#" class="nav__link">
+                                    <span class="navLink__title">New Models</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="helpful__block">
+                            <div class="search__wrap">
+                                <form>
+                                    <input type="text" class="search__input" placeholder="Search">
+                                    <button class="search__btn">
+                                        <img src="./img/search-icon.svg" onload="SVGInject(this)" class="searchBtn__icon" alt="">
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="cartBlock">
+                                <a href="#" class="cartBlock__link">
+                                    <img src="./img/cart-icon.svg" onload="SVGInject(this)" class="cartBlock__icon" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="mainSection">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <div class="breadcrumbs__content">
+                            <div class="breadcrumb">
+                                <a href="#" class="breadcrumb__link">
+                                    Home
+                                </a>
+                            </div>
+                            <img src="./img/arrow-right.svg" onload="SVGInject(this)" class="breadcrumb__arrow" alt="">
+                            <div class="breadcrumb">
+                                <span class="breadcrumb__current">My profile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profileMenu">
+                    <div class="container">
+                        <div class="profileMenu__content">
+                            <div class="deliveyLocation">
+                                <div class="deliveyLocation__header">
+                                    <p class="deliveyLocation__label">Delivery location</p>
+                                    <div class="deliveyLocation__value">
+                                        <div class="deliveyLocationValue__iconWrap">
+                                            <img src="./img/delivery-icon.svg" onload="SVGInject(this)" class="deliveyLocationValue__icon" alt="">
+                                        </div>
+                                        <div class="deliveyLocationValue__title">
+                                            6391 Elgin St. Celina, Delta 123123 23
+                                        </div>
+                                        <div class="deliveyLocationValue__arrowWrap">
+                                            <img src="./img/arrow-icon.svg" onload="SVGInject(this)" class="deliveyLocationValue__arrow" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="deliveyLocation__content">
+                                    <div class="deliveyLocation__btnWrap">
+                                        <button type="button" class="button2 deliveyLocation__btn">NEW ADDRESS</button>
+                                    </div>
+                                    <div class="deliveyLocation__address">
+                                        <div class="deliveyLocationAddress__row">
+                                            <label class="radio__container">6391 Elgin St. Celina, Delaware 10299
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="radio__checkmark"></span>
+                                            </label>
+                                            <button type="button" class="deliveyLocationAddress__btn">
+                                                <img src="./img/close-icon.svg" onload="SVGInject(this)"
+                                                    class="deliveyLocationAddress__btn-icon" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="deliveyLocationAddress__row">
+                                            <label class="radio__container">6391 Elgin St. Celina, Delaware 10299
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="radio__checkmark"></span>
+                                            </label>
+                                            <button type="button" class="deliveyLocationAddress__btn">
+                                                <img src="./img/close-icon.svg" onload="SVGInject(this)"
+                                                    class="deliveyLocationAddress__btn-icon" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="deliveyLocationAddress__row">
+                                            <label class="radio__container">6391 Elgin St. Celina, Delaware 10299
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="radio__checkmark"></span>
+                                            </label>
+                                            <button type="button" class="deliveyLocationAddress__btn">
+                                                <img src="./img/close-icon.svg" onload="SVGInject(this)"
+                                                    class="deliveyLocationAddress__btn-icon" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="deliveyLocationAddress__row">
+                                            <label class="radio__container">6391 Elgin St. Celina, Delaware 10299
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="radio__checkmark"></span>
+                                            </label>
+                                            <button type="button" class="deliveyLocationAddress__btn">
+                                                <img src="./img/close-icon.svg" onload="SVGInject(this)"
+                                                    class="deliveyLocationAddress__btn-icon" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="deliveyLocationAddress__row">
+                                            <label class="radio__container">6391 Elgin St. Celina, Delaware 10299
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="radio__checkmark"></span>
+                                            </label>
+                                            <button type="button" class="deliveyLocationAddress__btn">
+                                                <img src="./img/close-icon.svg" onload="SVGInject(this)"
+                                                    class="deliveyLocationAddress__btn-icon" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profileMenu__logoutWrap">
+                                <button type="button" class="profileMenu__logout">
+                                    <span class="profileMenu__logout-text">Log out</span>
+                                    <img src="./img/logout-icon.svg" onload="SVGInject(this)" class="profileMenu__logout-icon" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content">
+                        <div class="orderHistoryPage orderHistoryPage1">
+                            <div class="orderHistoryPage__header">
+                                <div class="orderHistoryPageHeader__top">
+                                    <div class="page__titleWrap flex1">
+                                        <h1 class="h1">orders history</h1>
+                                    </div>
+                                    <div class="redBtn__wrap">
+                                        <button type="button" class="redBtn">Create order</button>
+                                    </div>
+                                </div>
+                                <div class="orderHistory__topLine">
+                                    <div class="orderHistory__user">
+                                        <div class="orderHistoryUser__left">
+                                            <div class="orderHistoryUser__info">
+                                                <div class="orderHistoryUserInfo__imgWrap">
+                                                    <img src="./img/avatar.png" class="orderHistoryUserInfo__img" alt="">
+                                                </div>
+                                                <div class="orderHistoryUserInfo__main">
+                                                    <h5 class="orderHistoryUserInfo__title">Jānis Rava</h5>
+                                                    <p class="orderHistoryUserInfo__position">Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="orderHistoryUser__right">
+                                            <p class="orderHistoryUser__text">T: 26383837</p>
+                                            <p class="orderHistoryUser__text">janis@dinoss.lv</p>
+                                        </div>
+                                    </div>
+                                    <div class="orderHistoryTopLine__right">
+                                        <div class="sortBy__wrap">
+                                            <select class="select">
+                                                <option value="">Sort by</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="orderSearch orderSearch-gray">
+                                            <form>
+                                                <input type="text" class="orderSearch__input" placeholder="Search">
+                                                <button type="button" class="orderSearch__btn">
+                                                    <img src="./img/search-icon.svg" onload="SVGInject(this)" class="orderSearch__btn-icon" alt="">
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orders">
+                                <div class="order__row">
+                                    <div class="orderRow__header">
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content  orderRowHeader__elem-left orderRowHeader__elem1">
+                                                <div class="orderRowHeader__label">ID: 8709</div>
+                                                <div class="orderRowHeader__value"><span class="processing">Processing</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Date</div>
+                                                <div class="orderRowHeader__value">22.07.2024</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Type</div>
+                                                <div class="orderRowHeader__value">Usual order</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total w/o VAT</div>
+                                                <div class="orderRowHeader__value">408.00 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total with VAT</div>
+                                                <div class="orderRowHeader__value">598.00 €</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderRow__content">
+                                        <div class="orderRowContent__left">
+                                            <div class="orderRowContent__products">
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="showMoreBtn__wrap">
+                                                <button type="button" class="showMoreBtn">
+                                                    <span class="showMoreBtn__icon">+</span>
+                                                    Show more
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowContent__right">
+                                            <div class="orderRowContent__wrap">
+                                                <div class="order__priceBlock">
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total with VAT</div>
+                                                        <div class="orderPriceBlock__value">598.00 €</div>
+                                                    </div>
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total w/o VAT</div>
+                                                        <div class="orderPriceBlock__value">408.00 €</div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderSingle__btns">
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Download receipt
+                                                        <img src="./img/download-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Print receipt
+                                                        <img src="./img/print-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="comment__block">
+                                                    <h5 class="comment__title">Comment</h5>
+                                                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur. Mauris egestas semper id venenatis. Vestibulum adipiscing ornare velit donec.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__row">
+                                    <div class="orderRow__header">
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content  orderRowHeader__elem-left orderRowHeader__elem1">
+                                                <div class="orderRowHeader__label">ID: 8709</div>
+                                                <div class="orderRowHeader__value"><span class="processing">Processing</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Date</div>
+                                                <div class="orderRowHeader__value">22.07.2024</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Type</div>
+                                                <div class="orderRowHeader__value">Usual order</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total w/o VAT</div>
+                                                <div class="orderRowHeader__value">408.00 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total with VAT</div>
+                                                <div class="orderRowHeader__value">598.00 €</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderRow__content">
+                                        <div class="orderRowContent__left">
+                                            <div class="orderRowContent__products">
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="showMoreBtn__wrap">
+                                                <button type="button" class="showMoreBtn">
+                                                    <span class="showMoreBtn__icon">+</span>
+                                                    Show more
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowContent__right">
+                                            <div class="orderRowContent__wrap">
+                                                <div class="order__priceBlock">
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total with VAT</div>
+                                                        <div class="orderPriceBlock__value">598.00 €</div>
+                                                    </div>
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total w/o VAT</div>
+                                                        <div class="orderPriceBlock__value">408.00 €</div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderSingle__btns">
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Download receipt
+                                                        <img src="./img/download-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Print receipt
+                                                        <img src="./img/print-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="comment__block">
+                                                    <h5 class="comment__title">Comment</h5>
+                                                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur. Mauris egestas semper id venenatis. Vestibulum adipiscing ornare velit donec.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__row">
+                                    <div class="orderRow__header">
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content  orderRowHeader__elem-left orderRowHeader__elem1">
+                                                <div class="orderRowHeader__label">ID: 8709</div>
+                                                <div class="orderRowHeader__value"><span class="processing">Processing</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Date</div>
+                                                <div class="orderRowHeader__value">22.07.2024</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Type</div>
+                                                <div class="orderRowHeader__value">Usual order</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total w/o VAT</div>
+                                                <div class="orderRowHeader__value">408.00 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total with VAT</div>
+                                                <div class="orderRowHeader__value">598.00 €</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderRow__content">
+                                        <div class="orderRowContent__left">
+                                            <div class="orderRowContent__products">
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="showMoreBtn__wrap">
+                                                <button type="button" class="showMoreBtn">
+                                                    <span class="showMoreBtn__icon">+</span>
+                                                    Show more
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowContent__right">
+                                            <div class="orderRowContent__wrap">
+                                                <div class="order__priceBlock">
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total with VAT</div>
+                                                        <div class="orderPriceBlock__value">598.00 €</div>
+                                                    </div>
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total w/o VAT</div>
+                                                        <div class="orderPriceBlock__value">408.00 €</div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderSingle__btns">
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Download receipt
+                                                        <img src="./img/download-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Print receipt
+                                                        <img src="./img/print-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="comment__block">
+                                                    <h5 class="comment__title">Comment</h5>
+                                                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur. Mauris egestas semper id venenatis. Vestibulum adipiscing ornare velit donec.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__row">
+                                    <div class="orderRow__header">
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content  orderRowHeader__elem-left orderRowHeader__elem1">
+                                                <div class="orderRowHeader__label">ID: 8709</div>
+                                                <div class="orderRowHeader__value"><span class="processing">Processing</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Date</div>
+                                                <div class="orderRowHeader__value">22.07.2024</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Type</div>
+                                                <div class="orderRowHeader__value">Usual order</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total w/o VAT</div>
+                                                <div class="orderRowHeader__value">408.00 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total with VAT</div>
+                                                <div class="orderRowHeader__value">598.00 €</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderRow__content">
+                                        <div class="orderRowContent__left">
+                                            <div class="orderRowContent__products">
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="showMoreBtn__wrap">
+                                                <button type="button" class="showMoreBtn">
+                                                    <span class="showMoreBtn__icon">+</span>
+                                                    Show more
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowContent__right">
+                                            <div class="orderRowContent__wrap">
+                                                <div class="order__priceBlock">
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total with VAT</div>
+                                                        <div class="orderPriceBlock__value">598.00 €</div>
+                                                    </div>
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total w/o VAT</div>
+                                                        <div class="orderPriceBlock__value">408.00 €</div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderSingle__btns">
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Download receipt
+                                                        <img src="./img/download-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Print receipt
+                                                        <img src="./img/print-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="comment__block">
+                                                    <h5 class="comment__title">Comment</h5>
+                                                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur. Mauris egestas semper id venenatis. Vestibulum adipiscing ornare velit donec.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__row">
+                                    <div class="orderRow__header">
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content  orderRowHeader__elem-left orderRowHeader__elem1">
+                                                <div class="orderRowHeader__label">ID: 8709</div>
+                                                <div class="orderRowHeader__value"><span class="processing">Processing</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Date</div>
+                                                <div class="orderRowHeader__value">22.07.2024</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Type</div>
+                                                <div class="orderRowHeader__value">Usual order</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total w/o VAT</div>
+                                                <div class="orderRowHeader__value">408.00 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total with VAT</div>
+                                                <div class="orderRowHeader__value">598.00 €</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderRow__content">
+                                        <div class="orderRowContent__left">
+                                            <div class="orderRowContent__products">
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="showMoreBtn__wrap">
+                                                <button type="button" class="showMoreBtn">
+                                                    <span class="showMoreBtn__icon">+</span>
+                                                    Show more
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowContent__right">
+                                            <div class="orderRowContent__wrap">
+                                                <div class="order__priceBlock">
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total with VAT</div>
+                                                        <div class="orderPriceBlock__value">598.00 €</div>
+                                                    </div>
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total w/o VAT</div>
+                                                        <div class="orderPriceBlock__value">408.00 €</div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderSingle__btns">
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Download receipt
+                                                        <img src="./img/download-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Print receipt
+                                                        <img src="./img/print-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="comment__block">
+                                                    <h5 class="comment__title">Comment</h5>
+                                                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur. Mauris egestas semper id venenatis. Vestibulum adipiscing ornare velit donec.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__row">
+                                    <div class="orderRow__header">
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content  orderRowHeader__elem-left orderRowHeader__elem1">
+                                                <div class="orderRowHeader__label">ID: 8709</div>
+                                                <div class="orderRowHeader__value"><span class="processing">Processing</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Date</div>
+                                                <div class="orderRowHeader__value">22.07.2024</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Type</div>
+                                                <div class="orderRowHeader__value">Usual order</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total w/o VAT</div>
+                                                <div class="orderRowHeader__value">408.00 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total with VAT</div>
+                                                <div class="orderRowHeader__value">598.00 €</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderRow__content">
+                                        <div class="orderRowContent__left">
+                                            <div class="orderRowContent__products">
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="showMoreBtn__wrap">
+                                                <button type="button" class="showMoreBtn">
+                                                    <span class="showMoreBtn__icon">+</span>
+                                                    Show more
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowContent__right">
+                                            <div class="orderRowContent__wrap">
+                                                <div class="order__priceBlock">
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total with VAT</div>
+                                                        <div class="orderPriceBlock__value">598.00 €</div>
+                                                    </div>
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total w/o VAT</div>
+                                                        <div class="orderPriceBlock__value">408.00 €</div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderSingle__btns">
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Download receipt
+                                                        <img src="./img/download-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Print receipt
+                                                        <img src="./img/print-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="comment__block">
+                                                    <h5 class="comment__title">Comment</h5>
+                                                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur. Mauris egestas semper id venenatis. Vestibulum adipiscing ornare velit donec.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__row">
+                                    <div class="orderRow__header">
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content  orderRowHeader__elem-left orderRowHeader__elem1">
+                                                <div class="orderRowHeader__label">ID: 8709</div>
+                                                <div class="orderRowHeader__value"><span class="processing">Processing</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Date</div>
+                                                <div class="orderRowHeader__value">22.07.2024</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Type</div>
+                                                <div class="orderRowHeader__value">Usual order</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total w/o VAT</div>
+                                                <div class="orderRowHeader__value">408.00 €</div>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowHeader__elem">
+                                            <div class="orderRowHeader__elem-content">
+                                                <div class="orderRowHeader__label">Total with VAT</div>
+                                                <div class="orderRowHeader__value">598.00 €</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="orderRow__content">
+                                        <div class="orderRowContent__left">
+                                            <div class="orderRowContent__products">
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderRowContent__product">
+                                                    <div class="orderRowContentProduct__left">
+                                                        <a href="#" class="orderRowContentProduct__link">
+                                                            <div class="orderRowContentProduct__imgWrap">
+                                                                <img src="./img/order-product.png" class="orderRowContentProduct__img" alt="">
+                                                            </div>
+                                                        </a>
+                                                        <div class="orderRowContentProduct__info">
+                                                            <a href="#" class="orderRowContentProductInfo__link">
+                                                                <h5 class="orderRowContentProduct__title">Sol's</h5>
+                                                                <p class="orderRowContentProduct__text">Men's round neck t-shirt Imperial</p>
+                                                            </a>
+                                                            <div class="orderRowContentProduct__params">
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text orderRowContentProductParam__text2">Article: 11500</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Size: M</p>
+                                                                </div>
+                                                                <div class="orderRowContentProduct__param">
+                                                                    <p class="orderRowContentProductParam__text">Color: Ancient pink</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderRowContentProduct__right">
+                                                        <div class="orderRowContentProduct__status">
+                                                            <p class="orderRowContentProductStatus__elem">Qty: 10</p>
+                                                            <p class="orderRowContentProductStatus__elem">Total: 40.00 €</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="showMoreBtn__wrap">
+                                                <button type="button" class="showMoreBtn">
+                                                    <span class="showMoreBtn__icon">+</span>
+                                                    Show more
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="orderRowContent__right">
+                                            <div class="orderRowContent__wrap">
+                                                <div class="order__priceBlock">
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total with VAT</div>
+                                                        <div class="orderPriceBlock__value">598.00 €</div>
+                                                    </div>
+                                                    <div class="orderPriceBlock__row">
+                                                        <div class="orderPriceBlock__label">Total w/o VAT</div>
+                                                        <div class="orderPriceBlock__value">408.00 €</div>
+                                                    </div>
+                                                </div>
+                                                <div class="orderSingle__btns">
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Download receipt
+                                                        <img src="./img/download-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                    <button type="button" class="orderSingle__btn">
+                                                        Print receipt
+                                                        <img src="./img/print-icon.svg" onload="SVGInject(this)" class="orderSingle__btn-icon" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="comment__block">
+                                                    <h5 class="comment__title">Comment</h5>
+                                                    <p class="comment__text">Lorem ipsum dolor sit amet consectetur. Mauris egestas semper id venenatis. Vestibulum adipiscing ornare velit donec.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $(function() {
+                                        $('.orderRow__header').on('click', function() {
+                                            $(this).closest('.order__row').toggleClass('active');
+                                        });
+                                    })
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribeSection">
+                <div class="container">
+                    <div class="subscribe">
+                        <div class="subscribe__left">
+                            <div class="subscribe__titleWrap">
+                                <h2 class="h1">Subscribe for discounts adn sales!</h2>
+                            </div>
+                            <div class="subscribe__textWrap">
+                                <p class="text">Stay up to date with all the news and be one of the first to receive new
+                                    offers and promotions</p>
+                            </div>
+                        </div>
+                        <div class="subscribe__right">
+                            <form>
+                                <div class="subscribe__form">
+                                    <input type="text" class="subscribeForm__input" placeholder="Your email">
+                                    <button type="button" class="subscribeForm__btn">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__top">
+                        <div class="footer__contacts">
+                            <div class="footerContacts__header">
+                                <h5 class="footer__title">Contacts</h5>
+                            </div>
+                            <div class="footerContacts__content">
+                                <p class="footerContacts__text"><span>Dinoss SIA</span></p>
+                                <p class="footerContacts__text">T: 26343234</p>
+                                <p class="footerContacts__text">T: 67818214</p>
+                                <p class="footerContacts__text">info@dinoss.lv</p>
+                                <p class="footerContacts__text">Vagonu iela 23, Rīga, Latvija, LV-1009</p>
+                                <p class="footerContacts__text">LV40003269322</p>
+                                <p class="footerContacts__text">LV03HABA0001408038590</p>
+                            </div>
+                        </div>
+                        <div class="footer__managers">
+                            <div class="footerContacts__header">
+                                <h5 class="footer__title">Project managers</h5>
+                            </div>
+                            <div class="footerManagers__content">
+                                <div class="footerManagers__col">
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Jānis Rava</span></p>
+                                        <p class="footerContacts__text">T: 26383837</p>
+                                        <p class="footerContacts__text">janis@dinoss.lv</p>
+                                    </div>
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Rūdolfs Rava</span></p>
+                                        <p class="footerContacts__text">T: 29499045</p>
+                                        <p class="footerContacts__text">rudolfs@dinoss.lv</p>
+                                    </div>
+                                </div>
+                                <div class="footerManagers__col">
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Laura Sticenko</span></p>
+                                        <p class="footerContacts__text">T: 20362313</p>
+                                        <p class="footerContacts__text">laura@dinoss.lv</p>
+                                    </div>
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Mārcis Minders</span></p>
+                                        <p class="footerContacts__text">T: 29324659</p>
+                                        <p class="footerContacts__text">m.minders@dinoss.lv</p>
+                                    </div>
+                                </div>
+                                <div class="footerManagers__col">
+                                    <div class="footerManagers__block">
+                                        <p class="footerContacts__text"><span>Jānis Karlsons</span></p>
+                                        <p class="footerContacts__text">T: 29375666</p>
+                                        <p class="footerContacts__text">janis.karlsons@dinoss.lv</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__socials">
+                            <div class="footerSocials__titleWrap">
+                                <h5 class="footerSocials__title">Follow us</h5>
+                            </div>
+                            <div class="footerSocials__content">
+                                <a href="#" class="footerSocials__link">
+                                    <img src="./img/fb-icon.svg" onload="SVGInject(this)" class="footerSocials__link-img" alt="">
+                                </a>
+                                <a href="#" class="footerSocials__link">
+                                    <img src="./img/instagram-icon.svg" onload="SVGInject(this)" class="footerSocials__link-img" alt="">
+                                </a>
+                                <a href="#" class="footerSocials__link">
+                                    <img src="./img/youtube-icon.svg" onload="SVGInject(this)" class="footerSocials__link-img" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footerBottom__left">
+                            <p class="copyright__text">Copyright © 2011-2024 DINOSS</p>
+                        </div>
+                        <div class="footerBottom__right">
+                            <div class="footerBottom__menu">
+                                <a href="#" class="footerBottomMenu__link">Privacy Policy</a>
+                                <a href="#" class="footerBottomMenu__link">Terms of use</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(function() {
+            $('.select').customSelect();
+        })
+    </script>
+    <script src="./js/js.js"></script>
+    <script>
+          var datepicker = new Datepicker('#date');
+    </script>
+</body>
+</html>
